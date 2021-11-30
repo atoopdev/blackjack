@@ -9,6 +9,7 @@ console.log("Contents of sum: ", sum);
 // track win state for game
 let hasBlackjack = false;
 
+// tracks if game is still active
 let isAlive = true;
 
 //to win total must be exactly 21
