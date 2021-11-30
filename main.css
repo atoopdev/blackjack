@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url(./dannie-jing-3GZlhROZIQg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden; */
+  
+    font-family: sans-serif;
+  }
