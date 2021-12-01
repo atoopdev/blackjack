@@ -1,7 +1,7 @@
 
 // go back and replace with random number generator
 let firstCard = 11;
-let secondCard = 9;
+let secondCard = 10;
 
 let sum = firstCard + secondCard;
 console.log("Contents of sum: ", sum);
@@ -21,8 +21,8 @@ let messageEL = document.getElementById("message-el");
 
 function startGame(){
 //to win total must be exactly 21
-cardsEL.textContent = firstCard + ", " + secondCard;
-sumEL.textContent = firstCard + secondCard;
+cardsEL.textContent = "Cards: " + firstCard + ", " + secondCard;
+sumEL.textContent = "Sum: " + sum;
     if (sum <= 20) {
         console.log("Contents of sum: ", sum);
         message="Cards less than 21. Do you want to draw a new card?";
