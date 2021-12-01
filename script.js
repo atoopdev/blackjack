@@ -16,7 +16,9 @@ let isAlive = true;
 let message = "";
 // for outputing messages to browser
 let cardsEL = document.getElementById("cards-el");
-let sumEL = document.getElementById("sum-el");
+
+// more dynamic way to grab css selectors that getElementbyID. must use # to specify is id. use . for classes
+let sumEL = document.querySelector("#sum-el");
 let messageEL = document.getElementById("message-el");
 
 function startGame(){
