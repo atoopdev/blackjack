@@ -1,20 +1,62 @@
+/* color pallete via https://coolors.co/ */
+/* used https://css-tricks.com/couple-takes-sticky-footer/ to create an automatic stickey footer */
+
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    width: 100%;
-    min-height: 100vh;
-    /* background-image: url(./dannie-jing-3GZlhROZIQg-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow-x: hidden; */
-  
-    font-family: sans-serif;
-  }
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./esteban-lopez-OfdFHy1zxjQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+h1 {
+  color: #f2bec1;
+}
+
+p {
+  color: #e7cb72;
+}
+
+.content-wrapper {
+  flex: 1 0 auto;
+}
+
+.content-card {
+  background-color: #8e3531;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+a {
+  color: #deb93f;
+}
+.footer {
+  flex-shrink: 0;
+  color: #deb93f;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+}
