@@ -36,6 +36,23 @@ p {
   color: #e7cb72;
 }
 
+button {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+
+  font-weight: bold;
+  width: 150px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.start-btn {
+  background-color: #e7cb72;
+  color: #8e3531;
+}
+
 .content-wrapper {
   flex: 1 0 auto;
 }
