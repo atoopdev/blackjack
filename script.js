@@ -1,7 +1,11 @@
 
 // go back and replace with random number generator
-let firstCard = 11;
+let firstCard = 8;
 let secondCard = 10;
+
+// array of cards in hand
+let cards = [firstCard, secondCard];
+
 
 let sum = firstCard + secondCard;
 console.log("Contents of sum: ", sum);
@@ -22,9 +26,16 @@ let sumEL = document.querySelector("#sum-el");
 let messageEL = document.getElementById("message-el");
 
 function startGame(){
+renderGame();
+}
+
+function renderGame(){
 //to win total must be exactly 21
-cardsEL.textContent = "Cards: " + firstCard + ", " + secondCard;
+
+cardsEL.textContent = "Cards: " + cards[0] + ", " + cards[1];
+
 sumEL.textContent = "Sum: " + sum;
+
     if (sum <= 20) {
         console.log("Contents of sum: ", sum);
         message="Cards less than 21. Do you want to draw a new card?";
@@ -44,3 +55,12 @@ sumEL.textContent = "Sum: " + sum;
     }
 }
 
+function newCard(){
+    console.log("new card button clicked");
+    let card = 2;
+    // update listed card output
+    cardsEL.textContent = "Cards: " + firstCard + ", " + secondCard + card;
+    sum+=card;
+    sumEL.textContent = "Sum: " + sum;
+    renderGame();
+}

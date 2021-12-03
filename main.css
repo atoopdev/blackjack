@@ -29,7 +29,8 @@ body {
 }
 
 h1 {
-  color: #f2bec1;
+  /* color: #f2bec1; */
+  color: white;
 }
 
 p {
@@ -49,6 +50,11 @@ button {
 }
 
 .start-btn {
+  background-color: #fee668;
+  color: #8e3531;
+}
+
+.newcard-btn {
   background-color: #e7cb72;
   color: #8e3531;
 }
@@ -58,7 +64,7 @@ button {
 }
 
 .content-card {
-  background-color: #8e3531;
+  background-color: #943a37;
   width: 300px;
   height: 400px;
   padding: 20px;
@@ -71,11 +77,11 @@ button {
 }
 
 a {
-  color: #deb93f;
+  color: #482625;
 }
 .footer {
   flex-shrink: 0;
-  color: #deb93f;
+  color: #482625;
   padding: 10px;
   text-align: center;
 }

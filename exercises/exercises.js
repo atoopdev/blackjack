@@ -1,14 +1,28 @@
-let age = 101;
 
-console.log("Age: ", age);
+let myExperience = [
+    "Smith College BA in Art, minor in Computer Science", 
+    "University of Washington Helpdesk Analyst", 
+    "Frontend Mentor challenge xyz"
+]
 
-if (age < 100) {
-    console.log("Not elligible for birthday card!")
-} else if (age === 100) {
-    console.log("Here's your birthday card from the king!")
-} else {
-    console.log("You are over 100 - you already have a card!")
-}
+
+
+
+
+
+
+
+// let age = 101;
+
+// console.log("Age: ", age);
+
+// if (age < 100) {
+//     console.log("Not elligible for birthday card!")
+// } else if (age === 100) {
+//     console.log("Here's your birthday card from the king!")
+// } else {
+//     console.log("You are over 100 - you already have a card!")
+// }
 
 
 
