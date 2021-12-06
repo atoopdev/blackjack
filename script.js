@@ -59,7 +59,8 @@ function newCard(){
     console.log("new card button clicked");
     let card = 2;
     // update listed card output
-    cardsEL.textContent = "Cards: " + firstCard + ", " + secondCard + card;
+    cards.push(card);
+    console.log(cards);
     sum+=card;
     sumEL.textContent = "Sum: " + sum;
     renderGame();
