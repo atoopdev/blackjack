@@ -32,10 +32,13 @@ renderGame();
 function renderGame(){
 //to win total must be exactly 21
 
-cardsEL.textContent = "Cards: " + cards[0] + ", " + cards[1];
-
+// output cards in hand
+cardsEL.textContent = "Cards:  ";
+for(let n=0;n<cards.length; n++){
+    cardsEL.textContent += " " + cards[n];
+}
 sumEL.textContent = "Sum: " + sum;
-
+    
     if (sum <= 20) {
         console.log("Contents of sum: ", sum);
         message="Cards less than 21. Do you want to draw a new card?";

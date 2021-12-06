@@ -1,16 +1,49 @@
 
-let messages =[
-    "hey, how's it going?",
-    "I'm great, how about you?",
-    "All good. Been working on my portfolio lately."
-]
+// iterate through array and output to DOM
+let sentence = ["Hello", "my", "name", "is", "Per"];
+let greetingEL= document.getElementById("greeting-el");
 
-messages.push("Same here!")
-console.log(messages);
+for (let n=0; n<sentence.length; n++){
+  
+    greetingEL.textContent += sentence[n] + " ";
+}
 
-// remove last item in array
-messages.pop();
-console.log(messages);
+// let cards = [7, 3, 9];
+
+// for (let n=0; n<cards.length; n++){
+//     console.log(cards[n]);
+// }
+
+
+// for (let n=10; n<101; n+=10){
+//     console.log(n);
+// }
+
+
+
+// // start at 1, stop at 10, increment by 1
+// for (let count =1; count<11; count+=1) {
+//     console.log(count);
+// }
+
+// iterate through an array
+// let messages =[
+//     "hey, how's it going?",
+//     "I'm great, how about you?",
+//     "All good. Been working on my portfolio lately.",
+//     "Same here!"
+// ]
+
+// for (n=0; n<4; n+=1){
+//     console.log(messages[n]);
+// }
+
+// messages.push("Same here!")
+// console.log(messages);
+
+// // remove last item in array
+// messages.pop();
+// console.log(messages);
 
 
 
