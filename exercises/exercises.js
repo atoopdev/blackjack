@@ -1,27 +1,55 @@
 
-let player1Time = 102;
-let player2Time = 107;
 
-function getFastestRaceTime(){
-    if(player1Time < player2Time){
-        return player1Time;
-    } else if (player2Time < player1Time){
-        return player2Time;
-    } else{
-        return player1Time;
-    }
+// generating random numbers
+
+function rollDice(){
+// 1-6 range - have to +1 to eliminate 0 result
+let randomNum = Math.floor(Math.random() * 6) + 1;
+console.log(randomNum);
+return randomNum;
 }
 
-let fastestRace = getFastestRaceTime();
+rollDice();
 
-console.log(fastestRace)
+// // 0-6 range
+// let randomNum = Math.floor(Math.random() * 7);
+// console.log(randomNum);
 
-function getTotalRaceTime(){
-    return player1Time + player2Time;
-}
+// // drops the decimals
+// let flooredNumber = Math.floor(3.45632);
+// console.log(flooredNumber);
 
-let totalRaceTime = getTotalRaceTime();
-console.log(totalRaceTime);
+// // returns randome between 0 and 0.999999999
+// // multiply by x allows range to be between 0 and up to but not inclusive of x
+// let randomNumber = Math.random() * 6;
+// console.log(randomNumber);
+
+
+
+
+// let player1Time = 102;
+// let player2Time = 107;
+
+// function getFastestRaceTime(){
+//     if(player1Time < player2Time){
+//         return player1Time;
+//     } else if (player2Time < player1Time){
+//         return player2Time;
+//     } else{
+//         return player1Time;
+//     }
+// }
+
+// let fastestRace = getFastestRaceTime();
+
+// console.log(fastestRace)
+
+// function getTotalRaceTime(){
+//     return player1Time + player2Time;
+// }
+
+// let totalRaceTime = getTotalRaceTime();
+// console.log(totalRaceTime);
 
 
 // // iterate through array and output to DOM
