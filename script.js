@@ -1,20 +1,15 @@
-
-// go back and replace with random number generator
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-
 // array of cards in hand
-let cards = [firstCard, secondCard];
+let cards = [];
 
 
-let sum = firstCard + secondCard;
+let sum = 0;
 console.log("Contents of sum: ", sum);
 
 // track win state for game
 let hasBlackjack = false;
 
 // tracks if game is still active
-let isAlive = true;
+let isAlive = false;
 
 // for communicating to player
 let message = "";
@@ -46,6 +41,12 @@ function getRandomCard(){
 
 // --------------------- startGame -----------------------------
 function startGame(){
+    isAlive = true;
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+    cards = [firstCard, secondCard];
+    sum = firstCard + secondCard;
+    
 renderGame();
 }
 
