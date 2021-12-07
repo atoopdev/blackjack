@@ -28,8 +28,20 @@ let messageEL = document.getElementById("message-el");
 // ----------------------- getRandomCard -------------------------------
 
 function getRandomCard(){
-    let randomNumber = 5;
-    return randomNumber;
+    // number between 1 and 13
+    let randomNum = Math.floor(Math.random() * 13) + 1;
+    console.log(randomNum);
+    if (randomNum === 1){
+        console.log("Random num is 1, returning 11");
+        return 11;
+    } else if (randomNum <11){
+        console.log("Random num is <11, returning randomNum");
+        return randomNum;
+    } else {
+        console.log("Random num is 11 or >, returning 10");
+        return 10;
+    }
+// return randomNum;
 }
 
 // --------------------- startGame -----------------------------
