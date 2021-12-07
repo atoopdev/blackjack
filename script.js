@@ -1,7 +1,7 @@
 
 // go back and replace with random number generator
-let firstCard = 8;
-let secondCard = 10;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 
 // array of cards in hand
 let cards = [firstCard, secondCard];
@@ -25,10 +25,19 @@ let cardsEL = document.getElementById("cards-el");
 let sumEL = document.querySelector("#sum-el");
 let messageEL = document.getElementById("message-el");
 
+// ----------------------- getRandomCard -------------------------------
+
+function getRandomCard(){
+    let randomNumber = 5;
+    return randomNumber;
+}
+
+// --------------------- startGame -----------------------------
 function startGame(){
 renderGame();
 }
 
+// --------------------- renderGame ----------------------------
 function renderGame(){
 //to win total must be exactly 21
 
@@ -37,6 +46,8 @@ cardsEL.textContent = "Cards:  ";
 for(let n=0;n<cards.length; n++){
     cardsEL.textContent += " " + cards[n];
 }
+
+// output hand total
 sumEL.textContent = "Sum: " + sum;
     
     if (sum <= 20) {
@@ -58,9 +69,10 @@ sumEL.textContent = "Sum: " + sum;
     }
 }
 
+// ------------------------newCard------------------------------
 function newCard(){
     console.log("new card button clicked");
-    let card = 2;
+    let card = getRandomCard();
     // update listed card output
     cards.push(card);
     console.log(cards);

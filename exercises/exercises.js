@@ -1,12 +1,37 @@
 
-// iterate through array and output to DOM
-let sentence = ["Hello", "my", "name", "is", "Per"];
-let greetingEL= document.getElementById("greeting-el");
+let player1Time = 102;
+let player2Time = 107;
 
-for (let n=0; n<sentence.length; n++){
-  
-    greetingEL.textContent += sentence[n] + " ";
+function getFastestRaceTime(){
+    if(player1Time < player2Time){
+        return player1Time;
+    } else if (player2Time < player1Time){
+        return player2Time;
+    } else{
+        return player1Time;
+    }
 }
+
+let fastestRace = getFastestRaceTime();
+
+console.log(fastestRace)
+
+function getTotalRaceTime(){
+    return player1Time + player2Time;
+}
+
+let totalRaceTime = getTotalRaceTime();
+console.log(totalRaceTime);
+
+
+// // iterate through array and output to DOM
+// let sentence = ["Hello", "my", "name", "is", "Per"];
+// let greetingEL= document.getElementById("greeting-el");
+
+// for (let n=0; n<sentence.length; n++){
+  
+//     greetingEL.textContent += sentence[n] + " ";
+// }
 
 // let cards = [7, 3, 9];
 
