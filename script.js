@@ -62,7 +62,8 @@ for(let n=0;n<cards.length; n++){
 
 // output hand total
 sumEL.textContent = "Sum: " + sum;
-    
+
+    // determine game status
     if (sum <= 20) {
         console.log("Contents of sum: ", sum);
         message="Cards less than 21. Do you want to draw a new card?";
@@ -85,6 +86,9 @@ sumEL.textContent = "Sum: " + sum;
 // ------------------------newCard------------------------------
 function newCard(){
     console.log("new card button clicked");
+
+    // only grant new card if game still in play
+    if(isAlive===true && hasBlackjack===false){
     let card = getRandomCard();
     // update listed card output
     cards.push(card);
@@ -92,4 +96,7 @@ function newCard(){
     sum+=card;
     sumEL.textContent = "Sum: " + sum;
     renderGame();
+    } else{
+        console.log("Cannot give new card, game over.");
+    }
 }
