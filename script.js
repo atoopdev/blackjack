@@ -1,20 +1,15 @@
-
-// go back and replace with random number generator
-let firstCard = 8;
-let secondCard = 10;
-
 // array of cards in hand
-let cards = [firstCard, secondCard];
+let cards = [];
 
 
-let sum = firstCard + secondCard;
+let sum = 0;
 console.log("Contents of sum: ", sum);
 
 // track win state for game
 let hasBlackjack = false;
 
 // tracks if game is still active
-let isAlive = true;
+let isAlive = false;
 
 // for communicating to player
 let message = "";
@@ -25,17 +20,49 @@ let cardsEL = document.getElementById("cards-el");
 let sumEL = document.querySelector("#sum-el");
 let messageEL = document.getElementById("message-el");
 
+// ----------------------- getRandomCard -------------------------------
+
+function getRandomCard(){
+    // number between 1 and 13
+    let randomNum = Math.floor(Math.random() * 13) + 1;
+    console.log(randomNum);
+    if (randomNum === 1){
+        console.log("Random num is 1, returning 11");
+        return 11;
+    } else if (randomNum <11){
+        console.log("Random num is <11, returning randomNum");
+        return randomNum;
+    } else {
+        console.log("Random num is 11 or >, returning 10");
+        return 10;
+    }
+// return randomNum;
+}
+
+// --------------------- startGame -----------------------------
 function startGame(){
+    isAlive = true;
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+    cards = [firstCard, secondCard];
+    sum = firstCard + secondCard;
+    
 renderGame();
 }
 
+// --------------------- renderGame ----------------------------
 function renderGame(){
 //to win total must be exactly 21
 
-cardsEL.textContent = "Cards: " + cards[0] + ", " + cards[1];
+// output cards in hand
+cardsEL.textContent = "Cards:  ";
+for(let n=0;n<cards.length; n++){
+    cardsEL.textContent += " " + cards[n];
+}
 
+// output hand total
 sumEL.textContent = "Sum: " + sum;
-
+    
     if (sum <= 20) {
         console.log("Contents of sum: ", sum);
         message="Cards less than 21. Do you want to draw a new card?";
@@ -55,11 +82,13 @@ sumEL.textContent = "Sum: " + sum;
     }
 }
 
+// ------------------------newCard------------------------------
 function newCard(){
     console.log("new card button clicked");
-    let card = 2;
+    let card = getRandomCard();
     // update listed card output
-    cardsEL.textContent = "Cards: " + firstCard + ", " + secondCard + card;
+    cards.push(card);
+    console.log(cards);
     sum+=card;
     sumEL.textContent = "Sum: " + sum;
     renderGame();
