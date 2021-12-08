@@ -5,7 +5,9 @@ let myExperience = [
     "Frontend Mentor challenge xyz"
 ]
 
-
+console.log(myExperience[0]);
+console.log(myExperience[1]);
+console.log(myExperience[2]);
 
 
 
