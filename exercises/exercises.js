@@ -1,14 +1,52 @@
 
-// generating random numbers
+let likesDocumentaries = false;
+let likesStartUps = true;
 
-function rollDice(){
-// 1-6 range - have to +1 to eliminate 0 result
-let randomNum = Math.floor(Math.random() * 6) + 1;
-console.log(randomNum);
-return randomNum;
+if(likesDocumentaries === true || likesStartUps ===true){
+    recommendMovie();
 }
 
-rollDice();
+function recommendMovie(){
+    console.log("Check this movie out..")
+}
+
+
+
+
+
+// let hasSolvedChallenge = false;
+// let hasHintsLeft = false;
+
+// if( hasSolvedChallenge ===false && hasHintsLeft ===false){
+//     showSolution();
+// }
+// function showSolution(){
+//     console.log("Showing the solution...")
+// }
+
+//logical operators
+// let hasCompletedCourse = true;
+// let givesCertificate = true;
+
+// // note, adding === true is not necessary because the variables are bools
+// if(hasCompletedCourse === true && givesCertificate === true){
+//     generateCertificate();
+// }
+// function generateCertificate(){
+//     console.log("Generating certificate...")
+// }
+
+
+// // generating random numbers
+
+// function rollDice(){
+// // 1-6 range - have to +1 to eliminate 0 result
+// let randomNum = Math.floor(Math.random() * 6) + 1;
+// console.log(randomNum);
+// return randomNum;
+// }
+
+// rollDice();
 
 // // 0-6 range
 // let randomNum = Math.floor(Math.random() * 7);
