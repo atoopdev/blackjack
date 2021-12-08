@@ -20,6 +20,18 @@ let cardsEL = document.getElementById("cards-el");
 let sumEL = document.querySelector("#sum-el");
 let messageEL = document.getElementById("message-el");
 
+// player object
+let player ={
+    chips : 145,
+    name : "Amanda"
+}
+
+
+let playerEL = document.getElementById("player-el");
+playerEL.textContent = player.name + ": $" + player.chips;
+
+
+
 // ----------------------- getRandomCard -------------------------------
 
 function getRandomCard(){
