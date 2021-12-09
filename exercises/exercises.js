@@ -1,14 +1,45 @@
+// create castle object with one bool, one string, one number, one array
 
-let likesDocumentaries = false;
-let likesStartUps = true;
-
-if(likesDocumentaries === true || likesStartUps ===true){
-    recommendMovie();
+let castle ={
+    name: "Castle in Norway",
+    dailyRate: 707,
+    entireHome: true,
+    features: ["kitchen", "free parking", "wifi", "hot tub"]
 }
 
-function recommendMovie(){
-    console.log("Check this movie out..")
+console.log(castle.name);
+console.log(castle.features);
+
+
+// intro to objects
+
+let course = {
+    title: "Learn CSS Grid for Free",
+    lessons: 16,
+    creator: "Per Harald Borgen",
+    length: 63,
+    level: 2,
+    isFree: true,
+    tags: ["html", "css"]
 }
+
+// use dot notation to access contents
+console.log(course.length);
+
+// here is how bracket notation works
+console.log( course["tags"]);
+
+
+// let likesDocumentaries = false;
+// let likesStartUps = true;
+
+// if(likesDocumentaries === true || likesStartUps ===true){
+//     recommendMovie();
+// }
+
+// function recommendMovie(){
+//     console.log("Check this movie out..")
+// }
 
 
 
