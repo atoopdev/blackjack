@@ -30,7 +30,18 @@ let player ={
 let playerEL = document.getElementById("player-el");
 playerEL.textContent = player.name + ": $" + player.chips;
 
+// ------------------------reset------------------------------
 
+function reset(){
+    cards = [];
+    sum = 0;
+    hasBlackjack = false;
+    isAlive = true;
+    message = "Would you like to play a round?"
+    messageEL.textContent = message;
+    cardsEL.textContent = "Cards:  ";
+    sumEL.textContent = "Sum: ";
+}
 
 // ----------------------- getRandomCard -------------------------------
 

@@ -55,6 +55,11 @@ button {
 }
 
 .newcard-btn {
+  background-color: white;
+  color: #8e3531;
+}
+
+.reset-btn {
   background-color: #e7cb72;
   color: #8e3531;
 }
