@@ -1,33 +1,60 @@
+let age = 15;
+
+if(age<6){
+    console.log("Your discount is: free");
+} else if(age < 18){
+    console.log("Your discount is: child");
+} else if( age <27){
+    console.log("Your discount is: student");
+} else if(age<67){
+    console.log("Your discount is: full price");
+} else{
+    console.log("Your discount is: senior discount");
+}
+
+
+// let person = {
+//     name: "Amanda Toop",
+//     age: 40,
+//     country: "USA"
+// }
+
+// function logData(){
+//     console.log(person.name + " is " + person.age + " years old and lives in " + person.country);
+// }
+
+// logData();
+
 // create castle object with one bool, one string, one number, one array
 
-let castle ={
-    name: "Castle in Norway",
-    dailyRate: 707,
-    entireHome: true,
-    features: ["kitchen", "free parking", "wifi", "hot tub"]
-}
+// let castle ={
+//     name: "Castle in Norway",
+//     dailyRate: 707,
+//     entireHome: true,
+//     features: ["kitchen", "free parking", "wifi", "hot tub"]
+// }
 
-console.log(castle.name);
-console.log(castle.features);
+// console.log(castle.name);
+// console.log(castle.features);
 
 
-// intro to objects
+// // intro to objects
 
-let course = {
-    title: "Learn CSS Grid for Free",
-    lessons: 16,
-    creator: "Per Harald Borgen",
-    length: 63,
-    level: 2,
-    isFree: true,
-    tags: ["html", "css"]
-}
+// let course = {
+//     title: "Learn CSS Grid for Free",
+//     lessons: 16,
+//     creator: "Per Harald Borgen",
+//     length: 63,
+//     level: 2,
+//     isFree: true,
+//     tags: ["html", "css"]
+// }
 
-// use dot notation to access contents
-console.log(course.length);
+// // use dot notation to access contents
+// console.log(course.length);
 
-// here is how bracket notation works
-console.log( course["tags"]);
+// // here is how bracket notation works
+// console.log( course["tags"]);
 
 
 // let likesDocumentaries = false;
