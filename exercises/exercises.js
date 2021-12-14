@@ -1,16 +1,65 @@
-let age = 15;
 
-if(age<6){
-    console.log("Your discount is: free");
-} else if(age < 18){
-    console.log("Your discount is: child");
-} else if( age <27){
-    console.log("Your discount is: student");
-} else if(age<67){
-    console.log("Your discount is: full price");
-} else{
-    console.log("Your discount is: senior discount");
-}
+
+
+
+// return random item from array
+// let hands = ["rock", "paper", "scissor"];
+
+// function randomIndex(){
+// // 0-2 range
+// let i = Math.floor(Math.random() * 3);
+// return i;
+// }
+
+// let i = randomIndex();
+// console.log(i);
+// console.log(hands[i]);
+
+
+// let dayOfMonth = 31;
+// let weekDay = "Friday";
+
+// if( dayOfMonth === 13 && weekDay === "Friday"){
+//     console.log("Spooky face");
+// } else{
+//     console.log("Not spooky.")
+// }
+
+
+
+
+
+// let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+// largeCountries.shift();
+// largeCountries.unshift("China");
+// largeCountries.pop();
+// largeCountries.push("Pakistan");
+// for (let i=0; i<largeCountries.length; i++){
+//         console.log(largeCountries[i]);
+// }
+
+
+// let largeCountries =["China", "India", "USA", "Indonesia", "Pakistan"];
+
+// for (let i=0; i<largeCountries.length; i++){
+//     console.log(largeCountries[i]);
+// }
+
+
+
+// let age = 15;
+
+// if(age<6){
+//     console.log("Your discount is: free");
+// } else if(age < 18){
+//     console.log("Your discount is: child");
+// } else if( age <27){
+//     console.log("Your discount is: student");
+// } else if(age<67){
+//     console.log("Your discount is: full price");
+// } else{
+//     console.log("Your discount is: senior discount");
+// }
 
 
 // let person = {
@@ -257,7 +306,7 @@ if(age<6){
 
 
 // console.log("Age: ", age);
-
+// 
 // if (age >= 21) {
 //     console.log("You are old enough to enter a bar.")
 // } else {
